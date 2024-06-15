@@ -1,96 +1,677 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Identity by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan Dixit Personal Website</title>
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar1.JPG" alt="" width="200px" /></span>
-							<h1>Rohan Dixit</h1>
-							<p>Undergraduate Computer Science Student</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
-								<li><a href="https://www.google.com" class="fa-google">Google</a></li>
-								<li><a href="https://www.linkedin.com/in/rohan-dixit-5b8161127/" class="fa-linkedin">Linkedin</a></li>
-								<li><a href="#" class="fa-facebook">Facebook</a></li>
-							</ul>
-							<a href="assets/Dixit_Rohan_Resume.docx" class="button">Resume</a>
-						</footer>
-					</section>
+  <link rel="shortcut icon" href="./assets/images/headshot.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+<body>
 
-			</div>
+  <!--
+    - #MAIN
+  -->
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+  <main>
 
-	</body>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/headshot.jpg" alt="Rohan Dixit" class="circular-image" width="80" >
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Rohan Dixit">Rohan Dixit</h1>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:rohan.s.dixit@gmail.com" class="contact-link">rohan.s.dixit@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Maryland, USA</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/rohan-s-dixit/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/rdixit3" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Hobbies</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            While a technologist at heart, I enjoy working at the intersection of  
+            business and technology, looking to find innovative ways to drive business
+            growth in this increasingly digital age. 
+          </p>
+          <p>
+            As a software engineer at Amazon, I led several projects, such as designing
+            and creating product roadmaps for a microservice architecture that would 
+            integrate AI/ML workflows and developing the data ingestion framework for 
+            Halo Rise, a first of its kind bedside sleep tracker. 
+            To build my business skillset, I completed my MBA from the Kellogg School of Management in June 2024.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+        <section class="service">
+
+          <h3 class="h3 service-title">What I enjoy</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/productdev.png" alt="Product dev icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">0-1 Product Development</h4>
+
+                <p class="service-item-text">
+                  In several stops of my career and side projects, I have looked to gain end-to-end
+                  product development experience: defining requirements with stakeholders, 
+                  implementing a solution, and then iteratively improving upon it 
+                  after launch.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/lightbulb.jpg" alt="Emerging tech icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Emerging Technologies</h4>
+
+                <p class="service-item-text">
+                  I love reading about new technologies and how they work, ranging from 
+                  the VR and Bitcoin/Blockchain crazes nearly a decade ago to more recently,
+                  generative AI. I enjoy looking into practical applications of such technologies
+                  that unleash their full potential to create meaningful impact.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/ai.jpeg" alt="AI icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Artificial Intelligence</h4>
+                <p class="service-item-text">
+                  While the hype of AI has renewed recently, I have enjoyed learning about 
+                  AI-related topics since 2015 when I was in high school. I have worked
+                  with AI in many different forms such as robotics, computer vision,
+                  NLP, machine learning (random forests, neural networks), and, 
+                  of course, generative AI.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/sports.png" alt="Sports icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">College Sports</h4>
+                <p class="service-item-text">
+                  In my free time, I am a big college football and basketball fan who not
+                  only loves following the sports, but also traveling to new stadiums to
+                  experience different cities and traditions
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Kellogg School of Management, Northwestern University</h4>
+              <span>2022 — 2024</span>
+              <p class="timeline-text">
+                Majors: Strategy, Management Science, Operations
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Maryland, College Park</h4>
+              <span>2016 — 2019</span>
+              <p class="timeline-text">
+                Major: Computer Science
+                <br/>
+                Minor: Business - Innovation and Entrepreneurship
+                <br/>
+                Honors College - Entrepreneurship and Innovation Program
+                <br/>
+                CMSC411: Computer Systems Architecture Teaching Assistant (Spring 2019)
+                <br/>
+                Graduated in 3 years
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Poolesville High School</h4>
+              <span>2012 — 2016</span>
+              <p class="timeline-text">
+                Science, Math, and Computer Science Magnet Program
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Product Manager Intern, Adventures in Growth</h4>
+              <span>June 2023 — August 2023</span>
+              <p class="timeline-text">
+                For my MBA summer internship, I interned with a pre-seed startup 
+                building a community platform to share stories from senior tech executives 
+                in the startup world through podcast and newsletter content. While my prior
+                experience had been at a big tech company in Amazon, I was excited to 
+                develop my business strategy and product skills in a brand new startup
+                environment.
+                <br/> <br/>
+                During the internship, I identified an opportunity to leverage generative AI
+                to automate significant portions of content creation, which typically 
+                takes creators hours of time. While some AI podcast tools existed in 
+                the market, all offered relatively standardized outputs, ignoring the personal 
+                tone behind authoring original pieces that drives organic podcast growth.
+                <br/> <br/>
+                Therefore, I owned end-to-end creation of a minimum viable product of a generative
+                AI driven podcast tool that could offer more customization towards the author's purpose and audience,
+                and be trained upon prior content created by the user. During the internship, I 
+                performed customer interviews, market segmentation analysis, product requirements document,
+                and concept testing. 
+                <br/> <br/>
+                At the end of the internship, I had developed a prioritized feature backlog and
+                wireframes for components that could not be implemented during the internship.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Development Engineer, Amazon Halo</h4>
+              <span>January 2022 — August 2022</span>
+              <p class="timeline-text">
+                I enjoyed the remainder of my time at Amazon, working in the Devices 
+                organiation and gaining experience working on an external-facing product:
+                <a class="inline-link" href="https://www.aboutamazon.com/news/devices/amazon-halo-rise" target="_blank" rel="noopener noreferrer">
+                  Halo Rise</a>, a bedside sleep tracker and wake light
+                <br/> <br/>
+                In this role, I developed components for sleep data ingestion 
+                orchestration framework and led launch readiness activities, such as 
+                designing and coordinating load testing to support over 400 TPS, 
+                a critical requirement to ensure on-time launch of Halo Rise
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Development Engineer, Amazon Denied Party Screening</h4>
+              <span>August 2019 — December 2021</span>
+              <p class="timeline-text">
+                I started my full-time professional career in Amazon Denied Party Screening. 
+                When I joined, the organization was brand new, allowing me to grow rapidly
+                and take on larger responsibilities quicker, including my promotion to SDE2
+                in under 1.5 years.
+                <br/> <br/>
+                As part of the organization, I spent time designing a microservice 
+                architecture built on AWS, including a transition to a real-time machine
+                learning processing system and developing several products' roadmaps for 
+                our alert processing system and case management platform. These systems 
+                helped reduce manual investigation effort by 90% while increasing 
+                system throughput. 
+                <br/> <br/>
+                As a tech lead, I also mentored several teammates and interns during the 
+                rapid expansion of the engineering team, including leading a brand new 
+                team created in India by helping them get up to speed to deliver a 
+                data aggregation tool that simplified user experience.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Technical Project Analyst Intern, BAE Systems</h4>
+              <span>May 2017 — August 2017</span>
+              <p class="timeline-text">
+                After my first year of undergrad, I accepted a summer internship at BAE
+                Systems where I designed a SQL database to track over 2000 military intelligence officers deployed in Afghanistan from 
+                recruitment through redeployment that reduced data entry and processing 
+                time by 67%. In addition, I produced data analytics tools that could
+                demonstrate project growth and would be used to display data in future
+                government contract proposals.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Student Research Intern, National Institute of Standards and Technology (NIST)</h4>
+              <span>June 2015 — August 2015</span>
+              <p class="timeline-text">
+                Between my junior and senior years of high school, I interned in NIST's
+                Industrial Control Systems Lab to gain practical experience in the fields
+                of computer science and robotics.
+                <br/> <br/>
+                I designed a vision-based system to monitor manufacturing robots’ 
+                movements in real-time that provides the ability to quickly detect robot 
+                malfunction or deviation from its planned path, and therefore prevent 
+                accidents in the workplace. 
+                <br/>
+                My project research paper was named 1 of 300 National Semifinalists in the <a class="inline-link" href="https://www.societyforscience.org/regeneron-sts/intel-sts-2016-semifinalists/" target="_blank" rel="noopener noreferrer">
+                  2016 Intel Science Talent Search</a>, the nation’s most prestigious pre-college science competition.
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My Programming Language Skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">R</h5>
+                <data value="40">40%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">HTTP/CSS</h5>
+                <data value="40">40%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">C</h5>
+                <data value="10">10%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 10%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">OCaml</h5>
+                <data value="10">10%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 10%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="hobbies">
+
+          <p>Click to read more details!</p>
+          <div class="separator"></div>
+          
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+            </button>
+
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="Global Initiatives in Management China" data-description="In the Winter 2024 quarter, 
+              I participated in Kellogg's Global Initiatives in Management (GIM) class about China in the Global Economy. 
+              As part of the class, my team researched how Chinese families build wealth 
+              using real estate, a topic that is especially relevant given the recent market 
+              trends in China. That March, we spent 2 weeks of our spring break traveling to Shanghai, Guilin, and Hong Kong.
+              I had a great time getting to know students across Kellogg's MBA programs and 
+              meeting business leaders who provided us with great insight into China's role 
+              in the global economy and our team's research topic. As one of first few American
+              student groups to go to China in the last 5 years, the trip felt especially 
+              meaningful. While we often are exposed to the differences between US and China, 
+              it was refreshing to see firsthand the many similarities that do exist between 
+              the countries.">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/gim.jpeg" alt="construction" loading="lazy">
+                </figure>
+                <h3 class="project-title">Global Initiatives in Management China</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="MBA Case Competition" data-description="In Winter 2024, 
+              I participated in Kellogg's MBA Tech Case Competition which was sponsored by White Tuque.
+              Our challenge was to find ways to grow White Tuque's business based on their unique positioning
+              in the cybersecurity space. Our team took 2nd place in the competition,
+              proposing the business explore specific niches that we identified align with
+              the company's area of expertise and have high cybersecurity needs">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/casecomp.jpg" alt="construction" loading="lazy">
+                </figure>
+                <h3 class="project-title">White Tuque Case Competition</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="KTech Workshop Series" data-description="As a VP of the Kellogg Technology Club, 
+              I started a workshop series to teach students about introductory tech topics, such as
+              the Internet, Cloud, APIs, and Blockchain. Giving high-level overviews of these topics
+              helps to better prepare students for careers in tech. Each of the workshops reached
+              capacity, and the club workshop on APIs had over 100 signups! Here is a link to the
+              workshop deck I created and presented that day: https://docs.google.com/presentation/d/10t1V3w5PEVEXRnMcFBkoNt8WTGbAROofxy5ZikNbLRw/edit?usp=sharing">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ktech.jpg" alt="construction" loading="lazy">
+                </figure>
+                <h3 class="project-title">Creating KTech Workshop Series</h3>
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="dGlobal Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/construction.jpg" alt="construction" loading="lazy">
+                </figure>
+                <h3 class="project-title">Analytical Consulting Lab</h3>
+              </a>
+            </li> -->
+
+            <!-- <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="Global Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/gsp.png" alt="construction" loading="lazy">
+                </figure>
+                <h3 class="project-title">Growth Strategy Consulting Practicum</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="Global Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/construction.jpg" alt="construction" loading="lazy">
+                </figure>
+                <h3 class="project-title">NIST Technology Market Assessment Program</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="Global Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/construction.jpg" alt="construction" loading="lazy">
+                </figure>
+                <h3 class="project-title">FIA Competition</h3>
+              </a>
+            </li> -->
+
+          </ul>
+
+
+<!-- Modals for Project Items -->
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle1"></h2>
+    <p id="modalText1"></p>
+  </div>
+</div>
+
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle2"></h2>
+    <p id="modalText2"></p>
+  </div>
+</div>
+
+<div class="modal" id="modal3">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle3"></h2>
+    <p id="modalText3"></p>
+  </div>
+</div>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #HOBBIES
+      -->
+
+      <article class="hobbies" data-page="hobbies">
+
+        <header>
+          <h2 class="h2 article-title">Sports Travels</h2>
+        </header>
+
+        <section class="hobbies">
+
+          <img src="./assets/images/construction.jpg" alt="Under Construction" loading="lazy" width="300" height="300" style="margin: 0 auto;">
+
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
