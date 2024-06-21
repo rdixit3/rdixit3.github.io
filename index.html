@@ -26,71 +26,7 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/headshot.jpg" alt="Rohan Dixit" class="circular-image" width="80" >
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Rohan Dixit">Rohan Dixit</h1>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:rohan.s.dixit@gmail.com" class="contact-link">rohan.s.dixit@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Maryland, USA</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/rohan-s-dixit/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/rdixit3" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
+    <aside id="sidebar-placeholder">
     </aside>
 
     <!--
@@ -141,10 +77,11 @@
           <p>
             While a technologist at heart, I enjoy working at the intersection of  
             business and technology, looking to find innovative ways to drive business
-            growth in this increasingly digital age. 
+            growth in this increasingly digital age.
           </p>
           <p>
-            As a software engineer at Amazon, I led several projects, such as designing
+            As a software engineer at Amazon, I gained significant experience in a short
+            period of time by leading several projects, such as designing
             and creating product roadmaps for a microservice architecture that would 
             integrate AI/ML workflows and developing the data ingestion framework for 
             Halo Rise, a first of its kind bedside sleep tracker. 
@@ -509,7 +446,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/gim.jpeg" alt="construction" loading="lazy">
+                  <img src="./assets/images/gim.jpeg" alt="GIM" loading="lazy">
                 </figure>
                 <h3 class="project-title">Global Initiatives in Management China</h3>
               </a>
@@ -528,7 +465,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/casecomp.jpg" alt="construction" loading="lazy">
+                  <img src="./assets/images/casecomp.jpg" alt="case comp" loading="lazy">
                 </figure>
                 <h3 class="project-title">White Tuque Case Competition</h3>
               </a>
@@ -547,28 +484,42 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ktech.jpg" alt="construction" loading="lazy">
+                  <img src="./assets/images/ktech.jpg" alt="ktech" loading="lazy">
                 </figure>
                 <h3 class="project-title">Creating KTech Workshop Series</h3>
               </a>
             </li>
 
-            <!-- <li class="project-item  active" data-category="web development">
-              <a href="#" class="project-link" data-title="dGlobal Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="Analytical Consulting Lab" 
+              data-description="In Fall 2023, I participated in Analytical Consulting Lab as part
+              of a team of 4. Our team worked with a midsize Latin American bank client to identify
+              ways that they could improve their Net Promoter Score. As part of this project, I 
+              analyzed the large dataset we were provided and developed machine learning models, 
+              using random forest and neural network, to identify segments and factors in
+              the customer experience that influence NPS. Our team presented these findings and
+              recommendations to senior members of the company.">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/construction.jpg" alt="construction" loading="lazy">
+                  <img src="./assets/images/bank.png" alt="ACL" loading="lazy">
                 </figure>
                 <h3 class="project-title">Analytical Consulting Lab</h3>
               </a>
-            </li> -->
+            </li>
 
-            <!-- <li class="project-item  active" data-category="web development">
-              <a href="#" class="project-link" data-title="Global Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <li class="project-item  active" data-category="web development">
+              <a href="#" class="project-link" data-title="Growth Strategy Practicum" 
+              data-description="In Spring 2023, I participated in a capstone project class 
+              called Growth Strategy Practicum. In this project, I worked on using the company's
+              data to design a decision framework that could be used to optimize the use of the
+              company's resources to balance profitability and capability, with a proposal of 
+              how this logic could be automated into the company's technology platform. 
+              Our team presented our recommendations to the C-suite of the company.
+              NWVL PR announcement: https://www.nwvl.com/new-world-and-northwestern-collaboration/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -582,32 +533,47 @@
             </li>
 
             <li class="project-item  active" data-category="web development">
-              <a href="#" class="project-link" data-title="Global Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+              <a href="#" class="project-link" data-title="NIST TMAP Program" 
+              data-description="In Spring 2018, as part of the University of Maryland's
+              Honors Entrepreneurship and Innovation Program, I participated in a Technology
+              Market Assessment Program to assess applications of a new method for 
+              storing password databases on hardware and software security tokens 
+              developed at the National Institute of Standards and Technology (NIST).
+              I compiled industry forecasts and competitive analyses by conducting over 
+              40 interviews with cybersecurity professionals between myself and two teammates and
+              presented our final market assessment to NIST’s Director of Technology 
+              Partnership Office and Senior Patent Officers.">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/construction.jpg" alt="construction" loading="lazy">
+                  <img src="./assets/images/nist.png" alt="NIST" loading="lazy">
                 </figure>
                 <h3 class="project-title">NIST Technology Market Assessment Program</h3>
               </a>
             </li>
 
             <li class="project-item  active" data-category="web development">
-              <a href="#" class="project-link" data-title="Global Initiatives in Management China" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+              <a href="#" class="project-link" data-title="FIA Competition" 
+              data-description="In my freshman year at the University of Maryland, 
+              in the fall of 2016, I was the project leader for a team that entered the 
+              Future of Information Alliance (FIA) Innovation Spark Grant Pitch Competition.
+              I proposed a VR application as a form of exposure therapy for people who suffer
+              from glossophobia, the fear of public speaking, which affects 75% of Americans.
+              Our team was named a semi-finalist and had the opportunity to pitch our proposal.">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/construction.jpg" alt="construction" loading="lazy">
+                  <img src="./assets/images/vr.png" alt="VR" loading="lazy">
                 </figure>
-                <h3 class="project-title">FIA Competition</h3>
+                <h3 class="project-title">Virtual Reality Pitch Competition</h3>
               </a>
-            </li> -->
+            </li>
 
           </ul>
 
@@ -634,6 +600,38 @@
     <span class="close">&times;</span>
     <h2 id="modalTitle3"></h2>
     <p id="modalText3"></p>
+  </div>
+</div>
+
+<div class="modal" id="modal4">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle4"></h2>
+    <p id="modalText4"></p>
+  </div>
+</div>
+
+<div class="modal" id="modal5">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle5"></h2>
+    <p id="modalText5"></p>
+  </div>
+</div>
+
+<div class="modal" id="modal6">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle6"></h2>
+    <p id="modalText6"></p>
+  </div>
+</div>
+
+<div class="modal" id="modal7">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle7"></h2>
+    <p id="modalText7"></p>
   </div>
 </div>
 
